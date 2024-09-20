@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="atrakcjeZamoscia.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout HorizontalOptions="Center">
+            <Label Text="Spacer po Plantach" FontSize="28" HorizontalTextAlignment="Center"/>
+            <Image Source="zamosc.png"/>
+            <Label Text="Polubień: 0" HorizontalTextAlignment="End" x:Name="lblLike" Margin="0,5,15,-20"/>
+            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                   FontSize="18" Margin="25" HorizontalTextAlignment="Center"/>
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="20" Margin="15">
+                <Button Text="Lubię to" WidthRequest="150" Clicked="onPolubClicked"/>
+                <Button Text="Nielubię to" WidthRequest="150" Clicked="onNiePolubClicked"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
